@@ -1,0 +1,285 @@
+*{
+    font-family: "Montserrat", sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    width: 100%;
+    height: 100%;
+}
+
+.announcement{
+    color: white;
+    text-wrap: nowrap;
+}
+
+.announcements{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    height: 100%;
+    gap: 80%;
+    width: 100%;
+    overflow: auto;
+    font-size: 12px;
+}
+
+.announcements::-webkit-scrollbar{
+    display: none;
+}
+
+.announcement-container{
+    height: 40px;
+    background-color: black;
+    padding: 0px 45px;
+    z-index: 200;
+}
+
+.announcement-strip{
+    display: flex;
+    height: inherit;
+}
+
+.announcement-viewport{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 90%;
+    height: inherit;
+}
+.announcement-nav{
+    color: #dddddd;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 25px;
+    width: 10%;
+    height: inherit;
+}
+
+.announcement-nav a{
+    color: #dddddd;
+    text-decoration: none;
+}
+
+.nav-bar{
+    display: flex;
+    padding: 0px 70px;
+    justify-content: space-between;
+    height: 75px;
+}
+
+.nav-bar div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+}
+
+
+.nav-bar a{
+    text-decoration: none;
+    color: black;
+    font-size: 12px;
+    letter-spacing: 4px;
+}
+
+.banner-container{
+    height: 555px;
+    background-color: black;
+}
+
+.banner-container img{
+    width: 100%;
+    height: 100%;
+}
+
+.slider-wrapper{
+    height: 100%;
+}
+
+.slider-nav{
+    display: flex;
+	justify-content: center;
+	align-items: center;
+	gap: 10px;
+	padding: 2px;
+}
+
+.slider-nav a{
+    position: relative;
+    bottom: 20px;
+    z-index: 100;
+    background-color: rgb(66, 66, 66);
+    width: 50px;
+    height: 10px;
+}
+
+.slider-nav .active{
+    height: 13px;
+    position: relative;
+    bottom: 22px;
+    background-color: black;
+}
+
+.sec{
+    padding: 50px 50px;
+    height: 555px;
+}
+
+.sec .title-wrapper{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 25px;
+    font-weight: 500;
+    width: 100%;
+    margin-bottom: 3rem;
+}
+
+.faves-container{
+    display: flex;
+    gap: 10;
+}
+
+.card-wrapper img{
+    width: 100%;
+    height: 75%;
+}
+
+.card-wrapper{
+    width: 25rem;
+    height: 30rem;
+}
+
+.card-information a{
+    color: black;
+    font-weight: 300;
+    text-decoration: none;
+}
+
+.card-wrapper a:hover{
+    text-decoration: underline;
+    text-decoration-color: rgba(0, 0, 0, 0.381);
+}
+
+.card-information a:hover{
+    text-decoration: underline;
+    text-decoration-color: rgba(0, 0, 0, 0.381);
+}
+
+.price{
+    padding-top: 3px;
+    letter-spacing: 2px;
+    font-weight: 350;
+}
+
+.banner img{
+    width: 100%;
+}
+
+.footer-content{
+    display: flex;
+    height: 30rem;
+    padding-top: 60px;
+    background-color: rgba(242, 212, 203, 1);
+}
+
+.left-footer{
+    justify-content: center;
+    align-self: baseline;
+    padding-left: 50px;
+}
+
+.middle-footer{
+    justify-content: center;
+    align-self: baseline;
+    padding-left: 50px;
+}
+
+.footer-content ul li{
+    list-style: none;
+    margin-bottom: 15px;
+}
+
+.footer-content ul li a{
+    color: rgb(21, 21, 21);
+    text-decoration: none;
+}
+
+input{
+    background-color: rgba(0, 0, 0, 0);
+    border: 0px;
+    border-bottom: 2px solid rgb(193, 193, 193);
+    padding: 10px 0px 10px 0px;
+}
+
+input:focus{
+    outline-color: blue;
+}
+
+input{
+    width: 90%;
+}
+
+.input-container{
+    color: rgba(0, 0, 0, .7);
+    font-size: 13px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    text-wrap: wrap;
+    width: 23rem;
+    margin-bottom: 20px;
+}
+
+.input-container .apply{
+    color: rgb(21, 21, 21);
+}
+
+button{
+    border: none;
+    background-color: rgba(0, 0, 0, 0);
+    position: relative;
+    left: -15px;
+}
+
+.right-footer{
+    position: relative;
+    left: 40rem;
+}
+
+.links-container{
+    color: rgba(0, 0, 0, .7);
+    font-size: 13px;
+}
+
+.bottom-footer{
+    font-size: 13px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    position: relative;
+    top: 23rem;
+    right: 47rem;
+    color: rgb(21, 21, 21);
+}
+
+.bottom-footer a{
+    color: rgb(21, 21, 21);
+    text-decoration: none;
+}
+
+.links{
+    padding: 20px 0px 20px 0px;
+    display: flex;
+    gap: 40px;
+}
+
+
+.links-container a{
+    color: rgba(0, 0, 0, .7);
+    text-decoration: none;
+    font-size: 25px;
+}
